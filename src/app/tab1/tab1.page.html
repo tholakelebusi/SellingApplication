@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <h2 class="ion-text-uppercase">Browser Popular Categories</h2>
+<ion-grid>
+  <ion-row >
+    <ion-col size="4"  *ngFor="let c of  categories  ">
+
+
+
+        <ion-avatar href="/tab1/"   class="image-center ion-text-center">
+        <ion-icon   class=" ion-text-center" name={{c.icon}}></ion-icon>
+        </ion-avatar>
+          <div class="txtName ion-text-center">
+            <ion-label>{{c.name}}</ion-label>
+          </div>
+
+
+
+
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+
+</ion-content>
